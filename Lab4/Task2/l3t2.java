@@ -2,7 +2,7 @@
 
 public class l3t2 {
     static int maxSize = 8;
-    static String[] stack = new String[maxSize];
+    static String[] stack = new String[10];
     static int top = -1;
 
     public static boolean isEmpty() {
@@ -40,20 +40,23 @@ public class l3t2 {
         if (!isFull()) {
             top = top + 1;
             stack[top] = data;
+            System.out.println(data + " Entered successfully into the stack");
         } else {
             System.out.println("Could not insert data, Stack is full");
         }
     }
 
     public static void main(String[] args) {
-        push("Ateeq");
+        push("Ahtesham");
+        push("Mansoor");
+        push("Abbas");
         push("Anas");
-        push("Abeer");
-        push("Mohideen");
         push("Taimoor");
-        push("Rutba");
-        push("Aun");
+        push("Altamash");
+        push("Kashif");
         push("Muaz");
         push("Hasan");
+        push("Amir");
+
     }
 }

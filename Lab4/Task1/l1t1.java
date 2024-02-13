@@ -38,6 +38,7 @@ public class l1t1 {
         if (!isFull()) {
             top = top + 1;
             stack[top] = data;
+            System.out.println(data + " have been pushed into the stack sucessfully");
         } else {
             System.out.println("Could not insert data, Stack is full");
         }
@@ -45,23 +46,22 @@ public class l1t1 {
 
     public static void main(String[] args) {
         push("Ateeq");
-        push("Anas");
+        push("Muzammil");
         push("Abeer");
         push("Mohideen");
         push("Taimoor");
         push("Rutba");
-        peek();
-        pop();
-        peek();
-        pop();
-        peek();
-        pop();
-        peek();
-        pop();
-        peek();
-        pop();
-        peek();
-        pop();
-        peek();
+        System.out.println(peek());
+        System.out.println(pop());
+        System.out.println(peek());
+        System.out.println(pop());
+        System.out.println(peek());
+        System.out.println(pop());
+        System.out.println(peek());
+        System.out.println(pop());
+        System.out.println(peek());
+        System.out.println(pop());
+        System.out.println(peek());
+        System.out.println(pop());
     }
 }

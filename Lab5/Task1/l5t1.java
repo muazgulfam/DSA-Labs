@@ -15,7 +15,7 @@ public class l5t1 {
             while (indexOf(list, i) < indexOf(list, j)) {
                 do {
                     i++;
-                } while (list[i] < pivot);
+                } while (list[i] <= pivot);
                 do {
                     j--;
                 } while (list[j] > pivot);
